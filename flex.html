@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .parent{
+            width: 100vw;
+            height: 100Vh;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+        }
+        .header{
+            height: 100px;
+            background-color: rgb(111, 90, 147);
+            display: flex;
+            justify-content: space-between;
+        }
+        .one{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(147, 193, 112);
+        }
+        .two{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(9, 57, 35);
+        }
+        .section{
+            display: flex;
+            flex-grow: 3;
+            background-color: rgb(199, 184, 111);
+            display: flex;
+        }
+        .aside1{
+           
+            height: 100px;
+            background-color: rgb(172, 121, 186);
+        }
+        .main{
+          flex-grow: 1;
+          background-color: rgb(152, 42, 135);
+        }
+        .aside2{
+          
+          
+           height: 100px;
+            background-color: rgb(116, 202, 133);
+
+        }
+        .footer{
+            display: flex;
+            flex-grow: 1;
+            background-color: rgb(153, 84, 152);
+            display: flex;
+            flex-direction: column;
+        }
+        .footer1{
+            height: 100px;
+            background-color: rgb(146, 142, 131);
+        }
+        .footer2{
+           flex-grow: 1;
+            background-color: rgb(72, 95, 98);
+        }
+        @media (min-width:0px) and (max-width:500px){
+            .header{
+            
+            background-color: rgb(70, 22, 151);
+           
+        }
+        .section{
+           
+            background-color: rgb(149, 132, 47);
+            display: flex;
+            flex-direction: column;
+        }
+        .footer{
+           
+            background-color: rgb(107, 173, 102);
+            display: flex;
+           
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+       <div class="header">
+        <div class="one">one</div>
+        <div class="two">two</div>
+       </div>
+       <div class="section">
+        <div class="aside1">aside1</div>
+        <div class="main">main</div>
+        <div class="aside2">aside2</div>
+       </div>
+       <div class="footer">
+        <div class="footer1">footer1</div>
+        <div class="footer2">footer2</div>
+       </div>
+    </div>
+</body>
+</html>
